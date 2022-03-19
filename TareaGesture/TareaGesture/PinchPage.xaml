@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TareaGesture;assembly=TareaGesture"  
+             x:Class="TareaGesture.PinchPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <local:PinchToZoomContainer>
+                <local:PinchToZoomContainer.Content>
+                    <Image x:Name="image">
+                        <Image.GestureRecognizers>
+                            <SwipeGestureRecognizer Swiped="SwipeGestureRecognizer_Swiped" Direction="Left"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+                </local:PinchToZoomContainer.Content>
+            </local:PinchToZoomContainer>
+         </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
